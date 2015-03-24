@@ -1,0 +1,110 @@
+/* Base.scss */
+
+body {
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+blockquote {
+    background-color: rgba(243, 213, 245, 0.76);
+    margin: 0;
+    padding: em(16px);
+}
+
+blockquote cite {
+    display:  block;
+    text-align: right;
+}
+
+ul {
+    margin: 0 0 0 em(60px);
+    padding: 30px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+body {
+    font-family: 'Arimo';
+    font-style: normal;
+    margin: 0 auto;
+    //margin: top/bottom left/right;
+    max-width: 600px;
+    width: 75%;
+}
+
+
+h1 {
+    font-family: 'Quattrocento';
+    font-size: em(60px);
+    margin: em(20px) 0 em(40px) 0;
+    //margin: top right bottom left;
+}
+
+h2 {
+    font-family: 'Quattrocento';
+    font-size: em(44px);
+    margin: em(30px) 0 emem(10px) 0;
+}
+
+h3 {
+    font-family: 'Quattrocento';
+    font-size: em(34px);
+    margin: em(20px) 0 em(6px) 0;
+}
+
+h4 {
+    font-family: 'Quattrocento';
+    font-size: em(26px);
+    margin: em(20px) 0 em(2px) 0;
+}
+
+b, strong {
+    @include body-font-light-bold
+}
+
+i, em {
+    @include body-font-light-italic
+}
+
+a {
+    background-color: #626060;
+    border-radius: 4px;
+    color: #fff;
+    @include body-font-light-italic;
+    padding: 0 5px 2px 5px;
+    text-decoration: none;
+    //transition: background-color 300ms linear;
+    //transition: color 300ms linear;
+    transition: all 300ms linear;
+}
+
+a:hover {
+    background-color: #626060;
+    color: darken(#fff,35%);
+    //transition: background-color 300ms linear;
+    //transition: color 300ms linear;
+    transition: all 300ms linear;
+} 
